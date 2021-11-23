@@ -64,7 +64,7 @@ def day(server):
   
     return parcial,df
 
-parcial,df = day(server)
+# parcial,df = day(server)
 
 
 if st.button("Calcular lps diários"):
