@@ -64,24 +64,25 @@ def day(server):
   
     return parcial,df
 
-# parcial,df = day(server)
+parcial,df = day(server)
 
 
 if st.button("Calcular lps diários"):
-    parcial,df = day(server)
+    
 
     parcial.reset_index(drop=True)
     parcial.index += 1
     st.write(parcial)
 
-# def troca(df):
-
-
-#     return
-
-if st.button("Atualizar o dia"):
+def troca(df):
     dia_ant=df
     dia_ant = dia_ant.to_csv(f"dia_ant{server}.csv")
+
+    return
+
+if st.button("Atualizar o dia"):
+    troca(df)
+
     
 
 
