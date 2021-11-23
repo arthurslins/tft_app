@@ -74,14 +74,14 @@ if st.button("Calcular lps diários"):
     parcial.index += 1
     st.write(parcial)
 
-def troca(df):
+# def troca(df):
 
-    dia_ant=df
-    dia_ant = dia_ant.to_csv(f"dia_ant{server}.csv")
-    return
+
+#     return
 
 if st.button("Atualizar o dia"):
-    troca(df)
+    dia_ant=df
+    dia_ant = dia_ant.to_csv(f"dia_ant{server}.csv")
     
 
 
