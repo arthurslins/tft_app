@@ -77,7 +77,7 @@ if st.button("Calcular lps diários"):
 def troca(df):
     dia_ant=df
     dia_ant = dia_ant.to_csv(f"dia_ant{server}.csv")
-    $ git push heroku master
+
 
     return
 
