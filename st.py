@@ -73,6 +73,9 @@ if st.button("Calcular lps diários"):
     st.write(parcial)
 
 def troca(df):
+    parcial,df = day(server)
+
+    parcial.reset_index(drop=True)
     dia_ant=df
     dia_ant = dia_ant.to_csv(f"dia_ant{server}.csv")
     return
